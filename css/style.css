@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "DegularDisplay";
+  src: url("./../fonts/Degular-Regular.otf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "DegularDisplay";
+}
+
+:root {
+  --bg-white--: #ffffff;
+  --bg-dark--: #271f18;
+  --bg-grey--: #676767;
+  --text-white--: #ffffff;
+  --text-dark--: #000000;
+}
+
+h1 {
+  background-color: var(--bg-dark--);
+}
