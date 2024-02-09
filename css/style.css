@@ -136,6 +136,142 @@ header {
 }
 /* Banner section css end */
 
+/* Project section css start */
+.project_section {
+  padding-bottom: 50px;
+}
+
+.project_section .project_mobile_screen {
+  background-color: var(--bg-dark--);
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  max-height: 1000px;
+  height: 100%;
+  padding: 20px 25px;
+}
+
+.project_section .project_mobile_screen h3 {
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 40px;
+  text-align: center;
+  color: var(--bg-grey--);
+  padding-top: 33px;
+  padding-bottom: 10px;
+  letter-spacing: 4px;
+  font-family: "DegularDisplay";
+}
+
+.project_section .project_mobile_screen .grey_box {
+  text-align: center;
+  margin-bottom: 34px;
+}
+
+.project_section .project_mobile_screen .grey_box input {
+  background-color: var(--bg-grey--);
+  width: 100%;
+  height: 200px;
+}
+
+.branding_button,
+.production_button,
+.photography_button {
+  color: var(--bg-grey--);
+  border: 1px solid var(--bg-grey--);
+  font-size: 14px;
+  font-weight: 200;
+  padding: 4px 4px 0px 4px;
+}
+
+.project_info {
+  padding: 10px 0;
+}
+
+.project_info .project_title {
+  color: var(--text-white--);
+  font-weight: 700;
+  font-size: 44px;
+  font-family: "DegularDisplay-Bold";
+}
+
+.project_info .project_description {
+  color: var(--bg-grey--);
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.project_info .project_details .accordion-button:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.project_info .project_details .accordion-button {
+  font-weight: 700;
+  font-size: 17px;
+  font-family: "DegularDisplay";
+  border-bottom: 1px solid var(--text-white--);
+  max-width: 100px;
+  width: 100%;
+  padding: 0;
+  /* justify-content: center; */
+  color: var(--text-white--);
+}
+
+.project_info .project_details .accordion-button::after {
+  display: none;
+}
+
+.project_info .project_details .accordion-button::before {
+  content: "+";
+  padding-left: 4px;
+  padding-right: 5px;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.project_info .project_details .accordion-button[aria-expanded="true"]::before {
+  content: "-";
+}
+
+.project_section .contact_info {
+  padding-top: 54px;
+}
+
+.contact_info .contact_title {
+  font-family: "DegularDisplay-Bold";
+  color: var(--text-dark--);
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.contact_info .contact_mail,
+.contact_info .contact_phone {
+  font-weight: 300;
+  color: var(--text-dark--);
+  font-family: "DegularDisplay";
+  font-size: 15px;
+}
+
+.contact_info .contact_mail span,
+.contact_info .contact_phone span {
+  font-family: "DegularDisplay-Bold";
+  font-weight: 500;
+}
+
+.contact_info .contact_btn {
+  border-right: 1px solid #dfdfdf;
+  border-top: 1px solid #dfdfdf;
+  border-left: 1px solid #dfdfdf;
+  border-bottom: 1px solid var(--text-dark--);
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "DegularDisplay-Bold";
+  width: 100%;
+  background: var(--bg-white--);
+}
+
+/* Project section css end */
+
 /* Question section css start */
 .question_section {
   background-image: url("./../assets/accordion-bg.png");
