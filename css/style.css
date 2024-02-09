@@ -120,10 +120,21 @@ header {
   width: 100%;
   text-align: center;
 }
-.banner-content .text span{
+.banner-content .text span {
   font-weight: bold;
 }
 /* Banner section css end */
+
+/* Question section css start */
+.question_section {
+  background-image: url("./../assets/accordion-bg.png");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Question section css end */
 /* Footer section css start */
 footer {
   background-image: url("./../assets/footer-bg.png");
