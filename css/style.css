@@ -140,7 +140,7 @@ header {
 .banner-content .text span {
   font-weight: bold;
 }
-.banner-scrool-icon {
+.banner-scroll-icon {
   width: 80px;
   height: 80px;
 }
@@ -153,14 +153,51 @@ header {
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 .question_section h1 {
-  padding-top: 130px;
-  padding-bottom: 100px;
+  max-width: 300px;
+  width: 100%;
+  padding-top: 65px;
+  padding-bottom: 50px;
   font-weight: 700;
-  font-size: 50px;
+  font-size: 40px;
+  font-family: "DegularDisplay-Bold";
+  margin: 0 auto;
+}
+
+.question_item {
+  padding-bottom: 150px;
+}
+
+.question_item .accordion-item .accordion-header .accordion-button:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.question_item .accordion-item .accordion-header .accordion-button {
+  font-weight: 700;
+  font-size: 15px;
+  font-family: "DegularDisplay-Bold";
+  border-bottom: 1px solid var(--bg-dark--);
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.question_item .accordion-item .accordion-header .accordion-button::after {
+  display: none;
+}
+
+.question_item .accordion-item .accordion-header .accordion-button::before {
+  content: "+";
+  font-weight: 700;
+  font-size: 16px;
+  padding-right: 5px;
 }
 /* Question section css end */
+
 /* Footer section css start */
 footer {
   background-image: url("./../assets/footer-bg.png");
@@ -243,6 +280,15 @@ footer {
   .banner-scroll-icon {
     width: 160px;
     height: 160px;
+  }
+
+  /* Question */
+  .question_section h1 {
+    max-width: 500px;
+    width: 100%;
+    padding-top: 130px;
+    padding-bottom: 100px;
+    font-size: 80px;
   }
 
   /* footer */
