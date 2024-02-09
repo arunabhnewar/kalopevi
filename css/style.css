@@ -94,6 +94,8 @@ header {
 /* Banner section css start */
 .banner {
   background: url(../assets/bg-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -104,24 +106,37 @@ header {
 .banner-logo {
   max-width: 250px;
   width: 100%;
+  padding-top: 59px;
 }
 .banner-content {
+  padding-top: 60px;
 }
 .banner-content .heading h1 {
   text-align: center;
+  min-width: 300px;
   max-width: 863px;
   width: 100%;
   margin: 0 auto;
   font-weight: bold;
-  font-size: 120px;
+  font-size: 47px;
+  line-height: 47px;
+  letter-spacing: -2%;
+  padding-bottom: 40px;
 }
 .banner-content .text {
-  max-width: 863px;
+  max-width: 315px;
   width: 100%;
   text-align: center;
+  padding-bottom: 120px;
+  font-size: 15px;
+  margin: 0 auto;
 }
 .banner-content .text span {
   font-weight: bold;
+}
+.banner-scrool-icon {
+  width: 80px;
+  height: 80px;
 }
 /* Banner section css end */
 
@@ -183,3 +198,71 @@ footer {
 }
 
 /* Footer section css end */
+
+/* @media quaries */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .banner {
+    background: url(../assets/bg-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-height: 1083px;
+    height: 100%;
+  }
+  .banner-logo {
+    max-width: 250px;
+    width: 100%;
+    padding-top: 85px;
+  }
+  .banner-content {
+    padding-top: 120px;
+  }
+  .banner-content .heading h1 {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 120px;
+    line-height: 100px;
+    letter-spacing: -2%;
+    padding-bottom: 80px;
+  }
+  .banner-content .text {
+    max-width: 863px;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 120px;
+  }
+  .banner-content .text span {
+    font-weight: bold;
+  }
+  .banner-scrool-icon {
+    width: 161px;
+    height: 161px;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .banner-content .heading h1 {
+    font-size: 80px;
+    line-height: 80px;
+  }
+  .banner-content .text {
+    max-width: 863px;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 120px;
+  }
+}
+
+
