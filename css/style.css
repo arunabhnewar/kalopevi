@@ -166,11 +166,16 @@ header {
   margin: 0 auto;
 }
 
-.question_item {
+.question_item,
+.question_item_second_column {
   padding-bottom: 150px;
 }
 
-.question_item .accordion-item .accordion-header .accordion-button:focus {
+.question_item .accordion-item .accordion-header .accordion-button:focus,
+.question_item_second_column
+  .accordion-item
+  .accordion-header
+  .accordion-button:focus {
   box-shadow: none;
   outline: none;
 }
@@ -184,18 +189,81 @@ header {
   width: 100%;
   margin: 0 auto;
   justify-content: center;
+  color: var(--text-dark--);
 }
 
-.question_item .accordion-item .accordion-header .accordion-button::after {
+.question_item_second_column
+  .accordion-item
+  .accordion-header
+  .accordion-button {
+  font-weight: 700;
+  font-size: 15px;
+  font-family: "DegularDisplay-Bold";
+  border-top: 1px solid var(--bg-dark--);
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  color: var(--text-dark--);
+}
+
+.question_item .accordion-item .accordion-header .accordion-button::after,
+.question_item_second_column
+  .accordion-item
+  .accordion-header
+  .accordion-button::after {
   display: none;
 }
 
-.question_item .accordion-item .accordion-header .accordion-button::before {
+.question_item .accordion-item .accordion-header .accordion-button::before,
+.question_item_second_column
+  .accordion-item
+  .accordion-header
+  .accordion-button::before {
   content: "+";
   font-weight: 700;
   font-size: 16px;
   padding-right: 5px;
+  color: var(--text-dark--);
 }
+
+.question_item
+  .accordion-item
+  .accordion-header
+  .accordion-button[aria-expanded="true"]::before,
+.question_item_second_column
+  .accordion-item
+  .accordion-header
+  .accordion-button[aria-expanded="true"]::before {
+  content: "-";
+  color: var(--text-dark--);
+}
+
+.question_items_group {
+  margin: 10px 0;
+}
+
+.question_items_group .qusetion_icon {
+  max-width: 59px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.question_items_group .qusetion_item_heading {
+  font-family: "DegularDisplay-Bold";
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.question_items_group .qusetion_item_text {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 19px;
+  text-align: center;
+}
+
 /* Question section css end */
 
 /* Footer section css start */
