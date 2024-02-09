@@ -16,9 +16,6 @@ html {
 
 body {
   font-family: "DegularDisplay";
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 :root {
@@ -32,7 +29,6 @@ body {
 /* Header section css start */
 header {
   width: 100%;
-  height: 220px;
 }
 
 .header_content {
@@ -48,7 +44,7 @@ header {
 }
 
 .header_logo img {
-  max-width: 94px;
+  max-width: 64px;
   width: 100%;
   max-height: 112px;
   height: 100%;
@@ -56,8 +52,6 @@ header {
 
 .portfolio {
   background-color: var(--bg-dark--);
-  max-width: 200px;
-  width: 100%;
   max-height: 40px;
   height: 100%;
   color: var(--bg-white--);
@@ -69,15 +63,14 @@ header {
 }
 
 .portfolio h6 {
-  font-size: 16px;
+  font-size: 11px;
   font-weight: 600;
   border-bottom: 1px solid var(--bg-white--);
+  padding: 5px 7px;
 }
 
 .collaborer {
   border: 1px solid var(--text-dark--);
-  max-width: 200px;
-  width: 100%;
   max-height: 40px;
   height: 100%;
   color: var(--text-dark--);
@@ -89,8 +82,43 @@ header {
 }
 
 .collaborer h6 {
-  font-size: 16px;
+  font-size: 11px;
   font-weight: 600;
   border-bottom: 1px solid var(--bg-dark--);
+  padding: 5px 2px;
 }
 /* Header section css end */
+
+/* Banner section css start */
+.banner {
+  background: url(../assets/bg-img.png);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-height: 1083px;
+  height: 100%;
+}
+.banner-logo {
+  max-width: 250px;
+  width: 100%;
+}
+.banner-content {
+}
+.banner-content .heading h1 {
+  text-align: center;
+  max-width: 863px;
+  width: 100%;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 120px;
+}
+.banner-content .text {
+  max-width: 863px;
+  width: 100%;
+  text-align: center;
+}
+.banner-content .text span{
+  font-weight: bold;
+}
+/* Banner section css end */
