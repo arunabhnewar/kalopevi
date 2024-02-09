@@ -3,6 +3,11 @@
   src: url("./../fonts/Degular-Regular.otf");
 }
 
+@font-face {
+  font-family: "DegularDisplay-Bold";
+  src: url("./../fonts/DegularDisplay-Bold.otf");
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -32,10 +37,6 @@ header {
 }
 
 .header_content {
-  display: grid;
-  grid-template-columns: 25% 50% 25%;
-  justify-content: center;
-  align-items: center;
 }
 
 .header_logo {
@@ -53,47 +54,49 @@ header {
 .portfolio {
   background-color: var(--bg-dark--);
   max-height: 40px;
+  max-width: 100px;
+  width: 100%;
   height: 100%;
   color: var(--bg-white--);
-  border-top-left-radius: 9px;
-  border-top-right-radius: 9px;
+  border-radius: 9px 9px 0px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2px;
+  padding: 5px 2px;
+  cursor: pointer;
 }
 
 .portfolio h6 {
   font-size: 11px;
   font-weight: 600;
   border-bottom: 1px solid var(--bg-white--);
-  padding: 5px 7px;
 }
 
 .collaborer {
   border: 1px solid var(--text-dark--);
   max-height: 40px;
+  max-width: 100px;
+  width: 100%;
   height: 100%;
   color: var(--text-dark--);
-  border-top-left-radius: 9px;
-  border-top-right-radius: 9px;
+  border-radius: 9px 9px 0px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2px;
+  padding: 5px 2px;
+  cursor: pointer;
 }
 
 .collaborer h6 {
   font-size: 11px;
   font-weight: 600;
   border-bottom: 1px solid var(--bg-dark--);
-  padding: 5px 2px;
 }
 /* Header section css end */
 
 /* Banner section css start */
 .banner {
-  background: url(../assets/bg-img.png);
+  background: url("../assets/bg-img.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -104,27 +107,26 @@ header {
   height: 100%;
 }
 .banner-logo {
-  max-width: 250px;
+  max-width: 180px;
   width: 100%;
-  padding-top: 59px;
+  margin-top: 59px;
 }
 .banner-content {
-  padding-top: 60px;
+  margin-top: 70px;
 }
 .banner-content .heading h1 {
+  font-family: "DegularDisplay-Bold";
   text-align: center;
-  min-width: 300px;
-  max-width: 863px;
+  max-width: 260px;
   width: 100%;
   margin: 0 auto;
-  font-weight: bold;
-  font-size: 47px;
-  line-height: 47px;
-  letter-spacing: -2%;
+  font-size: 35px;
+  line-height: 35px;
+  letter-spacing: 2%;
   padding-bottom: 40px;
 }
 .banner-content .text {
-  max-width: 315px;
+  max-width: 320px;
   width: 100%;
   text-align: center;
   padding-bottom: 120px;
@@ -199,51 +201,41 @@ footer {
 
 /* Footer section css end */
 
-/* @media quaries */
+/* @media queries */
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-  .banner {
-    background: url(../assets/bg-img.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    max-height: 1083px;
-    height: 100%;
+  /* navbar */
+  .portfolio {
+    max-width: 216px;
+    padding: 10px 2px;
   }
+
+  .collaborer {
+    max-width: 216px;
+    padding: 10px 2px;
+  }
+
+  /* banner */
   .banner-logo {
-    max-width: 250px;
-    width: 100%;
-    padding-top: 85px;
+    max-width: 350px;
   }
   .banner-content {
-    padding-top: 120px;
+    margin-top: 150px;
   }
   .banner-content .heading h1 {
-    text-align: center;
-    width: 100%;
+    max-width: 500px;
     margin: 0 auto;
-    font-weight: bold;
-    font-size: 120px;
-    line-height: 100px;
-    letter-spacing: -2%;
-    padding-bottom: 80px;
+    font-size: 75px;
+    line-height: 75px;
   }
   .banner-content .text {
-    max-width: 863px;
-    width: 100%;
-    text-align: center;
-    padding-bottom: 120px;
-  }
-  .banner-content .text span {
-    font-weight: bold;
+    max-width: 520px;
+    font-size: 25px;
   }
   .banner-scrool-icon {
-    width: 161px;
-    height: 161px;
+    width: 160px;
+    height: 160px;
   }
 }
 
@@ -253,16 +245,4 @@ footer {
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .banner-content .heading h1 {
-    font-size: 80px;
-    line-height: 80px;
-  }
-  .banner-content .text {
-    max-width: 863px;
-    width: 100%;
-    text-align: center;
-    padding-bottom: 120px;
-  }
 }
-
-
