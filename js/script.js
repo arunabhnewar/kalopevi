@@ -1,3 +1,15 @@
+$(document).ready(function(){
+  $('.collapse-text').on('click', function () {
+    var text = $(this).text();
+    if (text === "de détails") {
+      $(this).text('fermer');
+    } else {
+      $(this).text('de détails');
+    }
+  });
+});
+
+
 document.addEventListener("contextmenu", function (e) {
   e.preventDefault();
 });
